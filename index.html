@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Anime Fandom Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+       <h1>Anime Fandom Survey Form</h1>
+       <p id="description">Please fill out this form with the required information</p>
+       <p id="description">Thank you for taking the time to help us improve the Anime World</p>
+    </header>
+    <form id="surveyform">
+        <fieldset>
+           <div>
+            <label for="name">Name: <input class="increase-width" id="name" name="name" type="text" placeholder="enter your name" required />
+            </label>
+            </div>
+            <div>
+                <label for="email">Email: <input class="increase-width" id="email" name="email" type="email" placeholder="enter your email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                </label>
+            </div>
+            <div>
+                <label for="age">Age: <input class="increase-width" id="number" name="email" type="number" placeholder="enter your age" pattern="[0-9]" min="10" max="100" required />
+                </label>
+            </div>
+            </fieldset>
+            <fieldset>
+                <label>How would you rate your love for name?</label>
+                <div>
+                    <label for="very-high"><input id="very-high" type="radio" name="love-rate"/> Very High
+                </label>
+                </div>
+                <div>
+                <label for="high"><input id="high" type="radio" name="love-rate"/> High
+                </label>
+                </div>
+                <div>
+                <label for="moderate"><input id="moderate" type="radio" name="love-rate"/> Moderate
+                </label>
+                </div>
+                <div>
+                <label for="low"><input id="low" type="radio" name="love-rate"/> Low
+                </label>
+                </div>
+                <div>
+                <label for="very-low"><input id="very-low" type="radio" name="love-rate"/> Very Low
+                </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>What is your favourite anime genre?</label>
+                <label for="anime-genre">
+                <div class>
+                    <select class="increase-width" id="anime-genre" name="anime-genre">
+                    <option value="">(select anime genre)</option>
+                    <option value="1">(anime genre)</option>
+                    <option value="2">(anime genre)</option>
+                    <option value="3">(anime genre)</option>
+                    <option value="4">(anime genre)</option>
+                </select>
+                </div>
+                </label>
+                </fieldset>
+             <fieldset>
+                <label>Which is your favorite anime production company?</label>
+                <label for="anime-company">
+                    <div class>
+                        <select class="increase-width" id="dropdown" name="anime-company">
+                        <option value="">(select anime prduction company)</option>
+                        <option value="1">(anime prduction company)</option>
+                        <option value="2">(anime prduction company)</option>
+                        <option value="3">(anime prduction company)</option>
+                        <option value="4">(anime prduction company)</option>
+                    </select>
+                    </div>
+                    </label>
+             </fieldset>
+             <fieldset>
+                <label>What manga would you want to be adapted to an anime?</label>
+                <div>
+                    <label for="a"><input id="a" type="checkbox" name="anime-adapt"/> A
+                </label>
+                <div>
+                    <label for="b"><input id="b" type="checkbox" name="anime-adapt"/> B
+                </label>
+                <div>
+                    <label for="c"><input id="c" type="checkbox" name="anime-adapt"/> C
+                </label>
+                <div>
+                    <label for="d"><input id="d" type="checkbox" name="anime-adapt"/> D
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="comments-suggestions"> Any Comments or Suggestions
+                    <div><textarea  class="increase-width-height"id="comments-suggestions" name="comments-suggestions" rows="5" cols="40" placeholder="Enter your comments here">
+                    </textarea></div>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" />
+    </form>
+  </body>
